@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ImageAnime from "../../assets/imageanime.gif"; // Image statique
 import { heroList } from "../hero/heroList";
 import "./hero.css";
 
@@ -42,7 +41,6 @@ const Hero = () => {
   return (
     <div className="hero">
       {/* Image statique */}
-      <img src={ImageAnime} alt="just-for-dream" className="image_hero" />
 
       {/* Carrousel d'images */}
       <div className="carousel">
