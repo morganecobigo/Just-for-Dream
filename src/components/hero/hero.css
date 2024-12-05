@@ -1,0 +1,49 @@
+.hero {
+  position: relative; /* Conteneur parent, nécessaire pour positionner le carrousel à l'intérieur */
+  text-align: center;
+}
+
+.image_hero {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel {
+  position: absolute; /* Positionner le carrousel par-dessus l'image */
+  top: 50%; /* Placer le carrousel au centre verticalement */
+  left: 50%; /* Placer le carrousel au centre horizontalement */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Ajuster pour que le carrousel soit centré */
+
+  width: 30%; /* Ajustez la largeur du carrousel */
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  max-width: 700px; /* Ajustez la taille des images du carrousel */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 2; /* Assurez-vous que les boutons sont au-dessus de l'image */
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}

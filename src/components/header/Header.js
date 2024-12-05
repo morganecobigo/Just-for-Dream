@@ -1,9 +1,9 @@
-import React, { useEffect, useState }  from 'react'
+import React, { useEffect, useState } from "react";
 import { Link, scroller } from "react-scroll";
-import Logo from "../../assets/logo.gif"
-import "./header.css"
+import Logo from "../../assets/logo/logo.gif";
+import "./header.css";
 
-function Header () {
+function Header() {
   const [isVisible, setIsVisible] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const checkScrollTop = () => {
@@ -27,28 +27,24 @@ function Header () {
     });
   };
 
-const toggleMenu = () => {
+  const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
     <header className="just_header" id="header">
       <h1>just for dream</h1>
-      <img
-        src={Logo}
-        alt="just-for-dream"
-        className="logo_Nelly"
-      />
- <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-        <Link to="about" smooth={true} duration={500}>
-          Ma présentation
+      <img src={Logo} alt="just-for-dream" className="logo_Nelly" />
+      <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
+        <Link to="about" smooth={true} duration={500} className="neon-link">
+          À propos de moi
         </Link>
-        <Link to="gallery" smooth={true} duration={500}>
-          Mes projets
+        <Link to="gallery" smooth={true} duration={500} className="neon-link">
+          Galerie
         </Link>
-        <Link to="services" smooth={true} duration={500}>
-          Mes Compétences
+        <Link to="services" smooth={true} duration={500} className="neon-link">
+          Prestations
         </Link>
-        <Link to="contact" smooth={true} duration={500}>
+        <Link to="contact" smooth={true} duration={500} className="neon-link">
           Contact
         </Link>
       </nav>
