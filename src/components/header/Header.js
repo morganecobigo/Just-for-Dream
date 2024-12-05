@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, scroller } from "react-scroll";
-import Logo from "../../assets/logo/logo.gif";
+import Logo from "../../assets/logo.gif";
 import "./header.css";
 
 function Header() {
@@ -36,13 +36,13 @@ function Header() {
       <img src={Logo} alt="just-for-dream" className="logo_Nelly" />
       <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
         <Link to="about" smooth={true} duration={500} className="neon-link">
-          À propos de moi
+          Ma présentation
         </Link>
         <Link to="gallery" smooth={true} duration={500} className="neon-link">
-          Galerie
+          Mes projets
         </Link>
         <Link to="services" smooth={true} duration={500} className="neon-link">
-          Prestations
+          Mes Compétences
         </Link>
         <Link to="contact" smooth={true} duration={500} className="neon-link">
           Contact
