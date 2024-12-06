@@ -5,7 +5,7 @@ export const heroList = [
   },
   {
     image: require("../../assets/pictures/giletnu.jpg"),
-    alt: "Gilet jaune",
+    alt: "Gilet",
   },
   {
     image: require("../../assets/pictures/blackandwhite.jpg"),
@@ -14,9 +14,5 @@ export const heroList = [
   {
     image: require("../../assets/pictures/white.jpg"),
     alt: "Image blanche",
-  },
-  {
-    image: require("../../assets/pictures/torsenu.jpg"),
-    alt: "Torse nu",
   },
 ];

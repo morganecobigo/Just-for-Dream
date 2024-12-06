@@ -36,13 +36,13 @@ function Header() {
       <img src={Logo} alt="just-for-dream" className="logo_Nelly" />
       <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
         <Link to="about" smooth={true} duration={500} className="neon-link">
-          Ma présentation
+          À propos de moi
         </Link>
         <Link to="gallery" smooth={true} duration={500} className="neon-link">
-          Mes projets
+          Gallery
         </Link>
         <Link to="services" smooth={true} duration={500} className="neon-link">
-          Mes Compétences
+          Prestations
         </Link>
         <Link to="contact" smooth={true} duration={500} className="neon-link">
           Contact
