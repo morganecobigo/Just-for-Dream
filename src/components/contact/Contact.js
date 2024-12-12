@@ -1,4 +1,5 @@
 import React from "react";
+import imageContact from "../../assets/image-contact.jpeg";
 import "./contact.css";
 
 const handleSubmit = (e) => {
@@ -9,6 +10,11 @@ const handleSubmit = (e) => {
 const Contact = () => {
   return (
     <div className="contact">
+      <img
+        src={imageContact}
+        alt="formulaire de contact"
+        className="image_Contact"
+      />
       <div className="form-image-wrapper">
         <div className="form-container">
           <h1>Contactez-moi</h1>
@@ -16,19 +22,19 @@ const Contact = () => {
             <label htmlFor="nom">Nom</label>
             <input type="text" id="nom" name="nom" placeholder="Votre nom" />
 
-            <label htmlFor="prenom">Prénom</label>
-            <input
-              type="text"
-              id="prenom"
-              name="prenom"
-              placeholder="Votre prénom"
-            />
-
             <label htmlFor="type">Vous êtes</label>
             <select id="type" name="type">
               <option value="particulier">Particulier</option>
               <option value="professionnel">Professionnel</option>
             </select>
+
+            <label htmlFor="telephone">Téléphone</label>
+            <input
+              type="text"
+              id="telephone"
+              name="telephone"
+              placeholder="Votre numéro de téléphone"
+            />
 
             <label htmlFor="email">E-mail</label>
             <input
